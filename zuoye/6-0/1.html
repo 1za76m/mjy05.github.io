@@ -1,0 +1,324 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style type="text/css">
+.ap {
+	padding-left: 227px;
+	background-color: #DAE7C2;
+}
+.aa {
+	overflow-y: scroll;
+}
+#aa {
+	background-color: #F5F9E5;
+	font-size: 35px;
+}
+#ii {
+	font-size: 36px;
+}
+</style>
+<link href="../jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
+<link href="../jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.tabs.min.css" rel="stylesheet" type="text/css">
+<script src="../jQueryAssets/jquery-1.8.3.min.js" type="text/javascript"></script>
+<script src="jQueryAssets/jquery-ui-1.9.2.tabs.custom.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+
+  
+<div align="center" class="ap" id="ii">CSS 层叠样式表
+    </div>
+  </ap>
+
+  </div>
+ </div>
+<div class="ap div"></div>
+<div class="aa" id="aa">
+  <aa>
+    <div id="Tabs1">
+      <ul>
+        <li><a href="#tabs-1">1——2</a></li>
+        <li><a href="#tabs-2">3——4</a></li>
+        <li><a href="#tabs-3">5——6</a></li>
+      </ul>
+      <div id="tabs-1">
+        <p>&nbsp;</p>
+        <p><strong>1</strong>CSS样式表的理论知识</p>
+        <p><strong>1.1</strong>CSS样式表简介<br>
+          CSS（Cascading Style Sheets）层叠样式表。CSS是一组样式，样式中的属性在HTML元素中依次出现，并显示在浏览器中。样式可以定义在HTML的文件的标志（TAG）里，也可以在外部附件文件中。如果是附件文件，一个样式表也可以用于多个页面。<br>
+          CSS的每一个样式表由相对应的样式规则组成，使用HTM L中的style组件就可以把样式规则加入到HTML中。style组件位于&lt;head&gt;部分，其中也包含网页的样式规则。所以CSS的语句是内嵌在HTML文档内的。</p>
+        <p><strong>1.2</strong>CSS的基本语法<br>
+          编写的CSS的方法和编写HTML文档的方法是一样的，CSS的代码由一些最基本的语句构成，它的基本语法如下：<br>
+          Selector{porperty:value}<br>
+          其中property:value是样式表的定义，property表示属性，value表示属性值，属性与属性值之间用冒号隔开，属性值与属性值之间用分号隔开：<br>
+          选择符{属性1：属性值1;属性2：属性值2}<br>
+          Selector是选择符，一般都是定义样式HTML的标记，如table、body、p等。</p>
+        <p><strong>1.3</strong>伪类和伪元素<br>
+          伪类和伪元素是CSS中特殊的类和元素 ，它们能够自动被支持CSS的浏览器所识别。伪类可以用于文档状态的改变、动态的事件等。<br>
+          选择符：伪类{属性：属性值}<br>
+          选择符：伪元素{属性：属性值}<br>
+          CSS类也可以与伪类、伪元素一起使用，有两种表达方式：<br>
+          选择符.类：伪类{属性：属性值}<br>
+          选择符.类：伪元素{属性：属性值}<br>
+          *定位锚伪类：<br>
+          伪类可以以不同的方式显示链接（links）、已访问链接（visited links）和可激活链接（active links）。<br>
+          A:link {color: red}<br>
+          A:active{color:blue; font——size: 125%}<br>
+          A:visited{color:green; font——size:85%}<br>
+          *首行伪元素：<br>
+          文本的首行可能会以粗体的形式展示。<br>
+          P:first——line {font——variant: small——caps ;font——weight:bold}<br>
+          &amp;首字母伪元素：<br>
+          P:first——letter {font ——size: 500% ; float: left}</p>
+        <p><strong>1.4</strong>样式表的层叠顺序</p>
+        <p>当使用了多个样式表，样式表需要指定选择符的控制权。这种情况下，总会有样式表的规则能获得控制权，以下特性能决定相互对立的样式表的结果。<br>
+          ！important:<br>
+          把样式指定为重要样式，其优先级会高于其他相同权重的样式。网页设计者指定的规则高于浏览者。<br>
+          BODY { background: url (bar. gif) white;	background——repeat——x ! important}<br>
+          Origin of Rules (Author‘s vs. Reader's):<br>
+          网页的设计者和浏览者都有能力去指定样式表。当两者的规则发生冲突时，在相同权重的情况下，网页设置者的规则会高于浏览者的规则。但网页设计者和浏览者的样式表都高于浏览器的内置样式表。<br>
+          为了方便使用，当两个规则具有相同的权重时，取后面的那个规则。</p>
+        <p><strong>2</strong> CSS 中的属性</p>
+        <p><strong>2.1.1</strong>字体属性</p>
+        <p>font——family:指使用的字体名称。<br>
+          font——style:指字体是否使用特殊样式。<br>
+          text——transform:控制文字大小写。<br>
+          font——size:字体大小。<br>
+          em:相对长度单位，相对于当前对象内文本的字体尺寸。<br>
+          px:像素，适用于所有的操作平台，但可能会因为浏览者屏幕分辨率不同，造成显示差异。<br>
+          text——decoration:文字的装修，改变浏览器显示文字链接时的下划线。属性值：Underline(下划线)、Overline(上划线)、line——through(删除线)、blink(闪烁)、none(无效果)。</p>
+        <p><strong>2.1.2</strong>文本属性</p>
+        <p>word-spacing：单词间距</p>
+        <p>letterspacing：字母间距</p>
+        <p>line——height:行间距</p>
+        <p>text——align:文本水平对齐。属性值：left、right、center、justify(相对左右对齐)。text——align是块级属性，只能用于&lt;p&gt;、&lt;blockqoute&gt;等标识符里。</p>
+        <p>vertical-align：垂直对齐。属性值：<br>
+          top:顶对齐<br>
+          bottom：底对齐<br>
+          text-ftop：相对文本顶对齐<br>
+          textbottom：相对文本底对齐<br>
+          baseline：基准线对齐<br>
+          middle：中心对齐<br>
+          Sub：以下表的形式显示<br>
+          super：以上标的形式显示<br>
+          text-indent：文本的缩进。text-indent也是块级属性。</p>
+        <p><strong>2.2</strong>CSS中的颜色及背景控制</p>
+        <p>*对颜色属性的控制：<br>
+          使用16进制色标值表示或以默认的颜色英文名表示。<br>
+          color:颜色参数值</p>
+        <p>*对背景颜色的控制：<br>
+          在HTML中，要为某个对象添加背景颜色只能先做一个表格，在表格中设置颜色，再把对象放人表格。而CSS却可以轻松做到这一点，且对象范围广，可以是一段文字、一个单词、一个字母。</p>
+        <p>background——color：参数值</p>
+        <p>参数默认值为transparent(透明)</p>
+        <p>*对背景图像的控制：</p>
+        <p>background——image：url(URL)</p>
+        <p>body{background——image：url(/images/foo.gif)}</p>
+        <p>*背景图像重复的控制<br>
+          background-repeat:属性值<br>
+          属性值：<br>
+          norepeat：不重复<br>
+          repeat-x：水平方向平铺<br>
+          repeat-y：垂直方向平铺<br>
+          如果不指定属性值，默认在水平、垂直两个方向同时平铺。</p>
+        <p>*背景定位：<br>
+          用于控制背景在网页中的位置。<br>
+          background-position：属性值<br>
+          属性值：<br>
+          top：相对前景对象顶对齐<br>
+          bottom：相对前景对象底对齐<br>
+          left：相对前景对象左对齐<br>
+          right：相对前景对象右对齐<br>
+          center：相对前景对象中心对齐<br>
+        </p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+      </div>
+      <div id="tabs-2">
+        <p>3——4</p>
+        <p><strong>3</strong>CSS中的方框的控制属性</p>
+        <p>CSS样式中规定了一个容器（BOX），它将储存一个对象的所有可操作的样式，包括对象本身、边框空白、对象边框、对象间隙4方面。</p>
+        <p>*边框空白：</p>
+        <p>位于BOX模型的最外层，包括4项属性：</p>
+        <p>margin-top:顶部空白距离</p>
+        <p>margin-right:右边空白距离</p>
+        <p>margin-bottom:底部空白距离</p>
+        <p>maigin-left:左边空白距离</p>
+        <p>*对象边框：</p>
+        <p>border-top:顶边框</p>
+        <p>border-right:右边框</p>
+        <p>border-bottm:底边框</p>
+        <p>border-left:左边框</p>
+        <p>border-width：所有边框，可以一次性设置所有的边框宽度，用border-width设置4条边框的颜色时，可以连续写上4种颜色，顺序为border-to、border-right、border-bottm、border-left.</p>
+        <p>border-color:边框颜色</p>
+        <p>border-style:边框样式参数</p>
+        <p>none:无边框</p>
+        <p>dotted：边框为点线</p>
+        <p>solid:边框为实线</p>
+        <p>double:边框为双线</p>
+        <p>groove:根据color属性显示不同的效果的3D边框</p>
+        <p>ridge:根据color属性显示不同的效果的3D边框</p>
+        <p>inset:根据color属性显示不同的效果的3D边框</p>
+        <p>outset:根据color属性显示不同的效果的3D边框</p>
+        <p>*对象间隙：</p>
+        <p>即填充据，指的是文本边框与文本之间的距离，包括以下4项属性。</p>
+        <p>padding-top 顶部间隙</p>
+        <p>padding-right 右边间隙</p>
+        <p>padding-bottom底部间隙</p>
+        <p>oadding-left左边间隙</p>
+        <p>用padding也可以一次性设置所有间隙，格式与maegin相似。</p>
+        <p><strong>4.</strong>CSS中的分类元素</p>
+        <p>在HTML中，用户无需使用前面提到的一些字体、颜色、边距等进行初始化，因为在CSS中已经提供了进行分级的专用分类属性。</p>
+        <p> *显示控制样式：</p>
+        <p>display:属性值</p>
+        <p>block(默认):在对象前后都换行</p>
+        <p>inline:在对象前后都不换行</p>
+        <p>list——item:在对象前后都换行，增加了项目符号</p>
+        <p>none:表示无显示。</p>
+        <p>*列表前的项目编码控制：</p>
+        <p>list——style——type:属性值</p>
+        <p>none:无强调符</p>
+        <p>disc:实心圆</p>
+        <p>dircle:空心圆</p>
+        <p>square:方形实心</p>
+        <p>decimal:数字</p>
+        <p>lower——roman:小写罗马字</p>
+        <p>upper——roman:大写罗马字</p>
+        <p>lower——alpha:小写字母</p>
+        <p>upper——alpha:大写字母</p>
+        <p>*在列表项前加入图像：</p>
+        <p>list——style——image:属性值</p>
+        <p>none:不加入图像</p>
+        <p>url:加入图像的url</p>
+        <p>*控制鼠标光标属性：</p>
+        <p>cursor:属性值</p>
+        <p>style=&quot; cursor:hand&quot;:手形</p>
+        <p>style=&quot; cursor:crosshair&quot;:十字形      </p>
+        <p>style=&quot; cursor:text”：文本形      </p>
+        <p>style=&quot; cursor:wait&quot;:等待形</p>
+        <p>style=&quot; cursor:move&quot;:十字箭头</p>
+        <p>style=&quot; cursor:help&quot;:问号形</p>
+        <p>style=&quot; cursor:e——resize&quot;:右箭头</p>
+        <p>style=&quot; cursor:n——resize”：上箭头</p>
+        <p>style=&quot; cursor:nw——resize&quot;:左上箭头</p>
+        <p>style=&quot; cursor:w——resize&quot;:左箭头</p>
+        <p>style=&quot; cursor:s——resize”：下箭头</p>
+        <p>style=&quot; cursor:se——resize&quot;:右下箭头</p>
+        <p>style=&quot; cursor:
+        sw——resize”：左下箭头</p>
+        <p>&nbsp;</p>
+      </div>
+      <div id="tabs-3">
+        <p><strong>5.</strong>添加CSS样式表</p>
+        <p><strong>5.1</strong>链接一个外部的样式表</p>
+        <p>一个外部的样式表可以通过HTML的link元素连接到HTML文档中，link标记放置在head部分。可选的type属性用于指定媒体类型。</p>
+        <p>&lt;head&gt;&lt;link rel=&quot;stylesheet&quot;herf=&quot;*.css&quot;type=&quot;text/css&quot;medi8a=&quot;screen&quot;&gt;</p>
+        <p>&lt;/head&gt;</p>
+        <p>外部样式表不能包含任何HTML标签，样式表仅仅由样式规则和声明组成。一个单独由P{margin:2em}组成的文件就可以用作外部样式表了。</p>
+        <p><strong>5.4 </strong>id属性</p>
+        <p>id 是根据文档对象模型原理所出现的选择符类型。对于一个网页而言，其中的每一个标签，均可以使用一个id=&quot;&quot;的形式对id属性进行一个名称的指定，再网页中每一个id只能使用一次。</p>
+        <p>&lt;div id=“main”&gt;•••&lt;/div&gt;</p>
+        <p>在CSS中，id选择符使用“#”进行识别，如需要对id为main的标签设置样式：class属性 </p>
+        <p>class可翻译为类，是对HTML多个标签的组合，标签可以用class&quot;&quot;的形式对class属性进行指定，与id属性不同的是，class允许重复使用，对于不同的标签，CSS可以直接根据class名称进行样式指定。</p>
+        <p>class在CSS中使用“，”加class名称的形式。</p>
+        <p><strong>5.6 </strong>div元素</p>
+        <p>div 和 span相似，具有span的所有功能，但有span不具有的特色。div是一个块，也就是所谓的容器。</p>
+        <p><strong>6</strong> CSS样式表的应用</p>
+        <p><strong>6.1</strong>创建CSS样式表</p>
+        <p>点击“窗口——&gt;CSS设计器”，或按Shift+F11打开“CSS设计器”在“CSS设计器”面板的“源”窗格中，单击，在弹出的菜单中选择以下某个选项：<br>
+          创建新的CSS文件：创建新的CSS文件并将其附加到文档<br>
+          附加现有的CSS文件：将现有的CSS文件附加到文档<br>
+          在页面中定义：在文档内定义CSS<br>
+          源：列出与文档相关所有CSS样式表。使用此格窗，可以创建CSS并将其附加到文档，也可以定义文档中的样式。<br>
+          选择器：在“源”窗格中列出所选源中的全部选择器。如果同时还选择了一个媒体查询，则此窗格会为该媒体查询缩小选择器列表范围。如果没有选择CSS或媒体查询，则此窗格将显示文档中的所有选择器。<br>
+          在“@媒体”窗格中选择“全局”后，将显示屏对所选源的的媒体查询中不包括的所有选择器。<br>
+          属性：显示可为指定的选择器设置的属性。<br>
+        CSS设计器是上下文相关的。这意味着，对于任何给定的上下文或选定的页面属性，都可以查看关联的所有媒体查询。</p>
+        <p><strong>6.2</strong>定义CSS选择器<br>
+          1.在“CSS设计器”中，选择“源”窗格中 的某个CSS源或“@媒体”窗格中的某个媒体查询。<br>
+          2.在“选择器”窗格中，单机。根据在文档中选择的元素，CSS设计器会智能确定并提示使用相关选择器（最多三条规则）。<br>
+          3.指定要创建的CSS样式的选择器<br>
+          ⚪类（可应用于任何HTML元素）<br>
+          ⚪ID（仅应用于一个HTML元素）<br>
+          ⚪标签（重新定义HTML元素）<br>
+          ⚪符合内容（基于选择的内容）<br>
+          4.选择或输入选择器的名称<br>
+          类：类名称必须以句点开头，并且可以包含任何字母和数字组合。<br>
+          ID：ID必须以#号开头，并且可以包含任何字母和数字结合。<br>
+          标签：在“选择器名称”文本框中输入HTML标签或从弹出菜单中选择一个标签。<br>
+        符合内容：输入父、子元素名称，中间用空格间隔。如#xsnazzy  h2。</p>
+        <p><strong>6.3</strong>设置CSS属性</p>
+        <p>1)设置“布局”属性<br>
+          使用“CSS样式定义”对话框中的“布局”类别可以定义元素CSS样式的可以快速设置边距、填充和位置属性。<br>
+          “Width”和“Height”——设置元素的宽度和高度。<br>
+          “Margin”——指定一个元素的边框（如果没有边框，则为填充）与另一个元素之间的间距。当应用于块级元素（如段落、标题、列表等）时，Dreamweaver CC才在“文档”窗口中显示该属性。<br>
+          “Padding”——指定元素内容与元素边框（如果没有边框，则为边距）之间的间距。<br>
+          “position”——设置定位方法<br>
+          “Float”——设置其他元素（如文本、AP元素、表格等）在哪边围绕元素浮动。其他元素按通常的方式环绕在浮动元素的周围。<br>
+          “Clear”——定义不允许出现AP元素的边。如果清除边上出现的AP元素，则带清除设置的元素移到该AP元素的下方。<br>
+          2）设置文本属性<br>
+          使用“CSS样式定义”对话框中的“文本”类别，可以定义标签和属性的间距和对齐设置。<br>
+          “Color”——设置文本的颜色。<br>
+          “Font——family”——为样式设置字体（或字体系列）。<br>
+          “Font-style”——将“正常”、“斜体”或“偏斜体”指定为字体样式。<br>
+          “Font-variant”——设置文本的小型大写字母变量。<br>
+          “Font-weight”——对字体应用特定或相对的粗体量。<br>
+          “Font-size”——定义文本大小。<br>
+          “Line-height”——设置文本所在行的高度，该设置传统上称为前导。<br>
+          “Text-align”——设置元素中的文本对齐方式。<br>
+          &quot;Text-decoration&quot;——向文本中添加下划线、上划线或删除线，或使文本闪烁。<br>
+          “Text-indent“——指定第一行文本缩进的程度。<br>
+          “Text-transform”——将选定内容中的每个单词的首字母大写或将文本设置为全部大写或小写。<br>
+          “Letter-spacing”——增加或减小字母或字符的间距。<br>
+          “Word-spacing”——设置单词的间距。<br>
+          &quot;White—space&quot;——确定如何处理元素中的空白。<br>
+          “Vertical-align”——指定元素的垂直对齐方式。<br>
+          3）设置边框属性<br>
+          使用“CSS样式定义”对话框中的“边框”类别可以定义元素周围的边框的设置（如宽度、颜色和样式）。<br>
+          “Width”——设置元素边框的粗细，两种浏览都支持“宽度”属性。取消选择“全部相同”可设置元素各边的边框宽度。选择“全部相同”，则将相同的边框宽度属性值设置于元素的“Top”、“Right”、“Botton”、“Left”侧。<br>
+          “Style”——设置边框的样式外观。样式的显示方式取决于浏览器，DreamweaverCC在“文档”窗口中将所有样式呈现为实线。<br>
+          “Color”——设置边框的颜色。可以分别设置每个边的颜色，但显示取决于浏览器。<br>
+          4）设置背景属性<br>
+          在“背景”分类属性中可进行如下设置<br>
+          “Background-color”——设置元素的背景颜色。<br>
+          “Background-position”——指定背景图像相对于元素的初始水平和垂直位置。<br>
+          “Background-image”——设置元素的背景图像。<br>
+          “geadient”——设置背景图像渐变<br>
+          “url”设置背景图像<br>
+          “Background-repeat”——确定是否以及如何重复背景图像。可选择，表示重复、横向重复、纵向重复和不重复。<br>
+          “Background-attachment”——确定背景图像是固定在它的原始位置还是随内容一起滚动。<br>
+          <strong>6.4</strong>定义媒体查询<br>
+          使用媒体查询，可以根据设备显示器的特性为其设定CSS样式。可以将媒体查询想象成对浏览器的提问。如果浏览器回答“是”则应用样式；如果回答“否”，则不应用样式。定义媒体查询的步骤如下：<br>
+          （1）在“CSS设计器”面板中，单击“源”窗格中的某<br>
+          个CSS源。<br>
+        （2）单击“@媒体”窗格中的以添加新的媒体查询。</p>
+        <p>（3）随后将显示“定义媒体查询”对话框，其中列出DreamweaverCC支持的所有媒体查询条件。<br>
+          （4）根据需要选择“条件”。<br>
+         </p>
+        <p><strong>6.5</strong>CSS过渡效果</p>
+        <p>当页面元素从一种样式转换到另一种样式时所添加的动态效果，称为CSS过渡效果。这种效果是由CSS规范中的transition属性实现的。</p>
+        <p><strong>6.5.2</strong>CSS过渡属性</p>
+        <p>ansition属性规定了过渡效果的相关特性，包括4个过渡属性：ansition——Property，transition-duration, transition - timing - function和transition一delay。</p>
+        <p>transition- property(过 渡属性)规定设置过渡效果的CSS属性名称,transition一duration(过渡时长)规定完成过渡效果的时间，transition一timing- function(过渡调速函数)规定过渡效果的速度曲线,不同的速度曲线具有不同过渡速度效果,transition- delay(过渡延时)定义过渡效果开始时间。</p>
+        <p>&nbsp;</p>
+        <h1 accuse="qTitle">&nbsp;</h1>
+      </div>
+    </div>
+  </aa>
+  <p>&nbsp;</p>
+</div>
+<script type="text/javascript">
+$(function() {
+	$( "#Accordion1" ).accordion(); 
+});
+$(function() {
+	$( "#Tabs1" ).tabs(); 
+});
+</script>
+</body>
+</html>
+

@@ -1,0 +1,110 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<link href="../../jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
+<link href="../../jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+body,td,th {
+	font-size: 15px;
+	color: #FBFF7B;
+}
+</style>
+<link href="../../jQueryAssets/jquery.ui.tabs.min.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+body {
+	background-image: url(553.jpg);
+	background-size: cover;	
+
+}
+</style>
+<script src="../../jQueryAssets/jquery-1.8.3.min.js" type="text/javascript"></script>
+<script src="../../jQueryAssets/jquery-ui-1.9.2.tabs.custom.min.js" type="text/javascript"></script>
+</head>
+
+<body><div>
+<div>
+  <center><h1><strong><em id="123"> 项目七 表单</em></strong></h1></center>
+</div>
+<div id="Tabs1">
+  <ul>
+    <li><a href="#tabs-1">表单的概述</a></li>
+    <li><a href="#tabs-2">表单的创建及设置</a></li>
+    <li><a href="#tabs-3">表单的创建表单对象</a></li>
+  </ul>
+  <div id="tabs-1">
+    <p>1表单的概述</p>
+    <p>使用表单能收集网站访问者的信息，比如会员注册信息，意见反馈。表单的 用需要两个条件：描述表单的HTML源代码和处理访问者在表单中输入信息的服务器应用程序脚本，如ASP,CGI。</p>
+    <p>ASP是Microsoft公司开发的服务器端脚本环境，可用来创建动态交式网页并建立强大的Web应用程序。当服务器收到对ASP文件的请求时，他会处理包含在用于构建发送给浏览器的HTML网页文件中的服务器端脚本代码，除服务器端脚本代码外，ASP文件也可以包含文本，HTML和com组件调用。</p>
+    <p>公共网关接口，是web服务器运行时外部程序的规范，按CGI编写的程序可以扩展服务器的功能。CGI应用程序能够与浏览器进行交互，还可通过数据API与数据库服务器等外部数据源进行通信，从数据库服务器中获取数据。格式化为HTML文档后，发送给浏览器，也可以将从浏览器获得的数据放到数据库中。几乎所有的服务器都支持CGI，可用任语言编写CGI。</p>
+    <p>表单由两部分组成，即表单域和表单对象。表单域包括处理数据所用的CGI程序和URL以及数据提交到服务器的方法；表单的对象包括文本域，密码域，单选按钮，复选项，弹出式菜单以及按钮等对象。</p>
+    <p>1.1表单的工作流程</p>
+    <p>表单支持交互作用，它将用户信息传送回Web站点，实现信息交互。表单所有元素都包含在&lt;form&gt; &lt;/form&gt;中，用户不可以嵌套表格 </p>
+  </div>
+  <div id="tabs-2">
+    <p>创建表格</p>
+    <p>点击插入--&gt;表单--&gt;表单，或者在“插入”面板中切换至“表单”，然后单击“表单”按钮。这时会出现一个红色虚线框，可点击查看-->可视化助理-->不可见元素。</p>
+    <p>2.1设置表单属性</p>
+    <p>参数介绍</p>
+    <p>表单ID：设置表单名称，方便以后程序控制</p>
+    <p>动作：输入处理该表单的动态页或用来处理数据的程序路径。</p>
+    <p>方法：选择表单的提示方式，包括“默认”，“GET”和“POST”，默认方式是GET。
+</p>
+    <p>---默认：使用浏览器默认设置将表单数据发送到服务器</p>
+    <p>---GET：将值追加到请求URL上。</p>
+    <p>---POST：在HTTP请求中嵌入表单数据 。</p>
+    <p>目标：包含-blank，-parent，-self，-top四种</p>
+    <p>---blank：目标文档将在窗口中打开</p>
+    <p>---parent:将目标文档在上级框架集成或包含该目标文档的窗口中打开。</p>
+    <p>---self:在提交表单所使用的窗口中打开目标文档，此目标位默认。</p>
+    <p>---top:将目标文档载入到整个浏览器窗口中，将删除所有框架。</p>
+    <p>编码类型：设置服务器端处理表单数据的文件源。</p>
+  </div>
+  <div id="tabs-3">
+    <p>创建表单对象</p>
+    <p>3.1创建文本域</p>
+    <p>文本域用来插入文本。访问者可以在文本域中输入相应信息。文本域分为“单行文本域”，“多行文本域”，“密码域”。</p>
+    <p>属性介绍：</p>
+    <p>文本域：输入该文本域名称。</p>
+    <p>字符宽度：指定文本域的最大长度。</p>
+    <p>初始值：输入要显示的默认文本。</p>
+    <p>注：想表单中插入表单对象时，会弹出一个“首选参数”对话框。若不想每次弹出，可点击编辑--&gt;首选参数-&gt;辅助功能，然后取消“表单对象”。</p>
+    <p>3.2创建单选按钮</p>
+    <p>点击&ldquo;插入&rdquo;面板中&ldquo;表单&rdquo;对象的&ldquo;单选按钮&rdquo;</p>
+    <p>3.3创建复选项</p>
+    <p>点击&ldquo;插入&rdquo;面板中&ldquo;表单&rdquo;对象的&ldquo;复选项&rdquo;。<br>
+    选中复选项，在&ldquo;属性&rdquo;面板中的&ldquo;复选框名称&rdquo;中输入唯一描述性名称，在&ldquo;选定值&rdquo;中设置在复选框被选中时发送给服务器的值。</p>
+    <p>3.4创建下拉菜单</p>
+    <p>在&ldquo;插入&rdquo;面板点击&ldquo;选择（列表/菜单）&rdquo;插入一个列表框。在&ldquo;属性&rdquo;面板中选择&ldquo;菜单&rdquo;，点击&ldquo;列表值&rdquo;，在&ldquo;项目标签&rdquo;中输入要显示的文本，在&ldquo;值&rdquo;中输入用户在选择该选项时向服务器发送的数据。</p>
+    <p>3.5创建滚动列表</p>
+    <p>在&ldquo;插入&rdquo;面板点击&ldquo;选择（列表/菜单）&rdquo;插入一个列表框。在&ldquo;属性&rdquo;面板中选择&ldquo;列表&rdquo;，在&ldquo;高度&rdquo;中输入要显示的行数。&ldquo;列表值&rdquo;与下拉菜单的设置相同。</p>
+    <p>3.6创建表单按钮</p>
+    <p>使用表单按钮可以将表单的数据提交到服务器，或者重置表单，还可以将其他已经在脚本中定义的处理任务分配给按钮。<br>
+    点击插入—&gt;表单—&gt;按钮 即可插入一个按钮，&ldquo;属性&rdquo;面板中的&ldquo;按钮名称&rdquo;输入按钮的名称，&ldquo;值&rdquo;输入显示在按钮上的文本。</p>
+    <p>3.7创建标签</p>
+    <p>标签主要用来设置表单对象的辅助功能选项，浏览器会阅读表单对象的&ldquo;标签文字&rdquo;属性。<br>
+    在&ldquo;插入&rdquo;面板切换到&ldquo;表单&rdquo;，点击&ldquo;标签&rdquo;，代码中就添加了&lt;label&gt;&lt;/label&gt;，在中间可以添加文字。</p>
+    <p>3.8创建跳转菜单</p>
+    <p>点击--插入&gt;表单--&gt;跳转菜单，打开“插入跳转菜单”对话框。</p>
+    <p>参数介绍：</p>
+    <p>菜单项：显示在“文本”文本框中输入的项目。</p>
+    <p>文本：输入要显示的文本。</p>
+    <p>选择时，转到URL：输入连接网址。</p>
+    <p>打开URL于：指定目标文件的打开位置。</p>
+    <p>菜单ID：输入菜单名称。</p>
+    <p>更改URL后选择第一个项目：跳转后重新定义菜单的第一个选项为默认选项。</p>
+    <p>3.9创建图像域</p>
+    <p>在文档页面中可以使用指定的图像作为按钮图标，这就要用到图像域。</p>
+    <p>在表单中选择一个位置，点击插入--&gt;表单--&gt;图像域，打开“选择图像源文件”对话框选择图片，在“属性” 面板中可进行设置。</p>
+    <p>&nbsp;</p>
+  </div>
+</div
+><script type="text/javascript">
+$(function() {
+	$( "#Tabs1" ).tabs(); 
+});
+</script>
+</body>
+</html>

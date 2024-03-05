@@ -1,0 +1,355 @@
+
+<!DOCTYPE html><html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>例7</title>
+<style>
+        .timu {
+            /* div颜色 */
+            background-color: blueviolet;
+            /* 内边距 */
+            padding: 10px;
+            /* 圆角 */
+            border-radius: 10px;
+            /* 字体大小 */
+            font-size: 200%;
+            /* 字体加粗 */
+            font-weight: bolder;
+            /* 鼠标样式（选中） */
+            cursor: pointer;
+        }
+
+        .timu div {
+            color: aqua;
+            background-color: brown;
+            padding: 15px;
+            margin-top: 10px;
+            border-radius: 15px;
+
+        }
+
+        .timu div:hover {
+            color: black;
+            background-color: aliceblue;
+            /* 鼠标样式（十字光标） */
+            cursor: crosshair;
+        }
+
+         .timu .daan {
+            background-color: brown;
+            color: yellow;
+            display: none;（弃用）
+        } 
+
+        body {
+            font-family: LXGW WenKai;
+        }
+
+        .bac {
+            background-color: aqua;
+            padding: 20px;
+        }
+
+        .ck {
+            color: aliceblue;
+            /* 定位方式 */
+            position: fixed;
+            background-color: cornflowerblue;
+            width: 200px;
+            height: 200px;
+            font-size: 150%;
+            border-radius: 8px;
+            left: 45%;
+            top: 45%;
+            font-weight: bold;
+            /* 整体放大 */
+            transform: scale(1.5);
+            /* 默认为打开 设置为关闭 */
+            display: none;
+        }
+
+        .ck .bt {
+            color: black;
+            width: 200px;
+            background-color: darkgray;
+            border-radius: 8px;
+
+        }
+
+        .ck .bt button {
+            float: right;
+            width: 25px;
+            height: 25px;
+            margin-top: 4px;
+            margin-right: 4px;
+        }
+
+        /* 替换图片的属性 */
+        .ck img {
+            width: 180px;
+            height: 120px;
+            margin-top: 10px;
+            margin-right: 10px;
+            margin-left: 10px;
+            border-radius: 5px;
+            /* 图片透明度 */
+            filter: opacity(90%)
+        }
+
+        .jishu {
+            color: rgb(255, 255, 255);
+            background-color: rgb(107, 7, 7);
+            position: fixed;
+            width: 200px;
+            height: 120px;
+            border-radius: 10px;
+            padding: 5px;
+            font-size: 180%;
+            font-weight: bolder;
+            right: 0;
+        }
+    </style>
+    <link rel="stylesheet" href="https://npm.elemecdn.com/lxgw-wenkai-webfont@1.1.0/lxgwwenkai-regular.css" />
+</head>
+
+<body>
+    <div class="jishu">
+        <div>答对：<span class="dui">0</span>次</div>
+        <div>答错：<span class="cuo">0</span>次</div>
+        <button class="cz">重置</button>
+    </div>
+    <div class="ck">
+        <div class="bt">标题<button>x</button></div>
+        <span></span>
+        <img src="gz.gif" alt="">
+    </div>
+    <div class="timu">
+        1.表单目标target值为——时会在未命名的新窗口中打开目标文档
+          <div da="1">A._blank</div>
+        <div>B._parent</div>
+        <div>C._self</div>
+        <div>D._top</div>
+    </div>
+    <br>
+    <div class="timu">
+        2.在——文本框中输入数据后，数据以*号显示
+          <div >A.单行文本框</div>
+        <div>B.多行文本框</div>
+        <div>C.数值文本框</div>
+        <div da="1">D.密码文本框</div>
+    </div>
+    <br>
+    <div class="timu">
+        3.插入——是制作表单页面的第一步
+          <div>A.文本域</div>
+        <div  da="1">B.表单域</div>
+        <div>C.文件域</div>
+        <div>D.图像域</div>
+    </div>
+    <br>
+    <div class="timu">
+        4.如果要在表单里创建一个普通文本框，一下写法中正确的是
+          <div da="1">A.&lt;INPUT&gt;</div>
+        <div>B.&lt;INPUT type=&quot;password&quot;&gt;</div>
+        <div >C.&lt;INPUT type=&quot;checkbox&quot;&gt;</div>
+        <div>D.&lt;INPUT type=&quot;radio&quot;&gt;</div>
+    </div>
+    <br>
+    <div class="timu">
+        5.以下有关表单的说明正确的是
+          <div>A.表单通常用于搜集用户信息</div>
+        <div >B.在FORM标记符中使用action属性制定表单处理程序的位置</div>
+        <div da="1">C.表单中只能包含表单控件，而不能包含其他诸如图片类型的内容</div>
+        <div>D.在FORM标记符中使用method属性指定提交表单数据的方法。</div>
+    </div>
+    <br>
+    <div class="timu">
+        6.在指定单选框时，只有将以下——属性的值指定为相同，才能使他们成为一组
+          <div>A.type</div>
+        <div da="1">B.name</div>
+        <div>C.value</div>
+        <div>D.checked</div>
+    </div>
+    <br>
+    <div class="timu"> 
+        7.创建选项菜单应使用以下标记符
+          <div da="1">A.SELECT和option</div>
+        <div >B.INPUT和LABEL</div>
+        <div>C.INPUT</div>
+        <div>D.INPUT和OPTION</div>                 
+    </div>
+   <br>
+    <div class="timu">
+        8.以下有关按钮的说法中，错误的是
+          <div>A.可以用图像作为提交按钮</div>
+        <div da="1">B.可以用图像作为重置按钮</div>
+        <div>C.可以控制提交按钮上的显示文字</div>
+        <div>D.可以控制重置按钮上的显示文字</div>
+    </div>
+    <br>
+    <div class="timu">
+        9.通常使用下列哪种方法了解访问者的意见，统计调查访问信息
+          <div>A.建立单元格</div>
+        <div da="1">B.建立表单</div>
+        <div>C.建立框架</div>
+        <div >D.建立表格</div>               
+    </div>
+   <br>
+    <div class="timu">     
+        10.以下说法中，错误的是
+          <div da="1">A.网页的本质就是HTML源代码</div>
+        <div da="1">B.网页就是主页</div>
+        <div>C.使用“记事本”编辑网页时，应将其保存为.htm或.html后缀</div>
+        <div >D.本地网站通常就是一个完整的文件夹</div>                
+    </div>
+   <br>
+    <div class="timu">
+        11.表单发送数据的方法哪有几种
+          <div >A.GET</div>
+        <div >B.POST</div>
+        <div >C.RETURN</div>
+        <div da="1">D.A和B</div>                  
+        </div>
+   <br>
+    <div class="timu">
+    <p>12.在表单中，对于文本字段的属性设置，以下提示正确的是<br>
+      1.如果数据将被提交到数据库，那么字段名称应该与他们在数据库中的名称一样<br>
+      2.如果数据将被提交到数据库
+    ，“最多字符段”属性值应该与数据库中相应字段的长度一致<br>
+    3.密码域只在浏览器窗口中隐藏密码<br>
+    4.提交表单时，密码作为纯文本进写传输，有可能被截获</p>
+    <div da="1">A.234</div>
+         <div >B.1234</div>
+         <div>C.123</div>
+         <div>D.124</div>               
+    </div>
+   <br>
+<div class="timu">     
+    13.ASP程序脚本是在
+      <div da="1">A.服务器端运行</div>
+    <div>B.客户端和服务器端同时运行</div>
+    <div >C.客户端和服务器端交叉运行</div>
+    <div>D.客户端运行</div>                 
+</div>
+<br>
+<div class="timu">      
+    14.DreamweaverCC中，关于Post与Get的区别的说法错误的是
+      <div>A.一般Get方式是将数据附在URL后发送</div>
+    <div >B.Get方式数据长度不能超过100个字符</div>
+    <div>C.一般搜索引擎中查找关键词等简单操作通过Get方式进行</div>
+    <div da="1">D.Post则不存在字符长度的限制，但也会把内容附到URL后</div>               
+</div>
+<br>
+<div class="timu">         
+    15.下面关于设置文本域的属性说法错误的是
+      <div >A.单行文本域只能输入单行的文本</div>
+    <div da="1">B.通过设置可以控制单行域的高度</div>
+    <div>C.通过设置可以控制输入单行域的最长字符数</div>
+    <div>D.口令域的主要特点是不在表单中显示据体输入内容，而是用*来代替显示</div>                   
+</div>
+<br>
+<div class="timu">
+    16.“单选按钮组”是插入共享同一名称的单选按钮的集合，插入“单选按钮组”后要逐个改名
+      <div>A.没有必要，DW会自动该命名</div>
+    <div>B.有必要，要不然无法发送数据</div>
+    <div>C.无法命名</div>
+    <div da="1">D.一个组中的所有单选按钮必须具有相同的名称，而且必须包含不同的域值</div>
+</div>
+<br>
+<div class="timu">
+    17.在表单包含性别选项，默认状态为“男”被且选中，下列正确的是
+      <div>A.&lt;input type=radio name=sex checked&gt;男</div>
+    <div >B.&lt;input type=radio name=sex enabled&gt;男</div>
+    <div da="1">C.&lt;input type=checkbox name=sex checked&gt;男</div>
+    <div>D.&lt;input type=checkbox name=sex enabled&gt;男</div>
+</div>
+<br>
+<div class="timu">
+    18.在表单中需要把用户的数据以密码的形式接受，应该定义的表单元素是
+      <div>A.&lt;input type=text&gt;</div>
+    <div da="1">B.&lt;input type=password&gt;</div>
+    <div >C.&lt;input type=checkbox&gt;</div>
+    <div>D.&lt;input type=radio&gt;</div>
+</div>
+<br>
+<div class="timu">
+    19.一下关于按钮的说法中，错误的是
+      <div>A.可以用图像作为提交按钮</div>
+    <div da="1">B.可以用图像作为重置按钮</div>
+    <div >C.可以控制提交按钮上的显示文字</div>
+    <div>D.可以控制重置按钮上的显示文字</div>
+</div>
+<br>
+<div class="timu">
+    20.HTML代码&lt;input type=text name=&quot;address&quot; size=30&gt;表示
+  <div>A.创建一个单选框</div>
+    <div da="1">B.创建一个单行文本输入区域</div>
+    <div >C.创建一个提交按钮</div>
+  <div>D.创建一个使用图像的提交按钮</div>
+</div>
+</body>
+
+
+<!-- InstanceEnd --></html>
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script>
+    $(document).ready(function () {
+
+        $(".timu div").click(function () {
+            setTimeout(function() {
+                $(".ck").hide()
+            }, 1500);
+            // 判断.timu div内是否有标记da=1
+            var da = $(this).attr("da");
+            // 判断是否有da标记
+            var dd = $(this).attr("dd");
+            // 如果有
+            if (dd == undefined) {
+                // 如果没有
+                if (da != undefined) {
+                    // 若有标记图片替换文字替换回答正确
+                    $(".ck span").text("回答正确");
+                    $(".ck img").attr("src", "./gz.gif");
+                    $(this).css("background-color", "blue")
+                    // 若无标记图片文字替换为回答错误 回答错误
+                    add(".dui")
+                } else {
+                    $(".ck span").text("回答错误");
+                    $(".ck img").attr("src", "./2.gif");
+                    $(this).css("background-color", "red")
+                    add(".cuo")
+                }
+
+
+                // 点击后给.timu div 添加dd标记
+                $(this).attr("dd", "1");
+                // $(".ck").show();
+            }
+            // 函数
+            function add(idtxt) {
+                var a = parseInt($(idtxt).text());
+                $(idtxt).text(a + 1);
+				push();
+
+            }
+
+
+            // 点击选项后显示
+            $(".ck").show();
+        })
+		function push()
+		{
+			var dui = $(".dui").text();
+			var cuo = $(".cuo").text();
+			$.post("./update.php",{
+				dui:dui,
+				cuo:cuo
+				},function(data){
+					console.log(data);
+					
+			},'json');
+		}
+
+    })
+</script>
